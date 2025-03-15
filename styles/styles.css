@@ -22,5 +22,30 @@ img {
 }
 
 p {
-    padding: 10px;
+    padding: 0;
+}
+
+main {
+    max-width: 800px;
+}
+
+aside {
+    width: 400px;
+    margin: 2rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+}
+
+aside img {
+    width: 200;
+    height: auto;
+}
+
+footer {
+    margin-top: 10px;
+    border-top: 1px black;
+    text-align: center;
 }
