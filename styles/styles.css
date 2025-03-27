@@ -1,8 +1,19 @@
+* {
+    margin:0;
+    padding:0;
+}
+
 :root {
     background-color: rgb(5, 62, 36);
     border: 1px solid black;
     text-align: center;
 }
+
+
+
+
+
+
 
 nav {
     background-color: var(--heading-background-color);
