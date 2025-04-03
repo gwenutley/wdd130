@@ -12,21 +12,42 @@
     --accent2_color: white;
 }
 
-body {
-    line-height:2;
-    background-color: var(--accent1_color);
-    color: var(--primary_color);
-}
-
 header {
+    display:grid;
+    grid-template-columns:1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr;
+    grid-gap:0;
     background-color: var(--accent1_color);
     padding:20px;
     align-items:center;
 }
 
-header.logo img {
+.logo img {
+    grid-column:2 / 3;
     width:25%;
     height:auto;
+}
+
+.group1 {
+    grid-column:4 / 5;
+}
+
+.group2 {
+    grid-column:5 / 6;
+}
+
+.group3 {
+    grid-column:6 / 7;
+}
+
+.group4 {
+    grid-column:7 / 8
+}
+
+
+body {
+    line-height:2;
+    background-color: var(--accent1_color);
+    color: var(--primary_color);
 }
 
 nav a {
