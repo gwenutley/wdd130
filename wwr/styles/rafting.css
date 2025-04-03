@@ -1,130 +1,144 @@
 * {
     max-width: 100%;
-    margin: 10px;
+    margin: 15px;
     padding: 0;
+}
+
+/* header changes */
+header {
+    border: .5em solid var(--primary_color);
+    background-color: var(--secondary_color);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "shirkhand", sans-serif;
+    text-decoration: none;
+}
+
+#page-header {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: 1px solid var(--primary_color)
 }
 
 /* variables */
 :root {
     --primary_color: #14384D;
-    --secondary_color: #316DAD;
+    --secondary_color: #c0d6ee;
     --accent1_color: #F8B5B4;
     --accent2_color: white;
 }
 
-header {
-    display:grid;
-    grid-template-columns:1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr;
-    grid-gap:0;
-    background-color: var(--accent1_color);
-    padding:20px;
-    align-items:center;
-}
-
-.logo img {
-    grid-column:2 / 3;
-    width:25%;
-    height:auto;
-}
-
-.group1 {
-    grid-column:4 / 5;
-}
-
-.group2 {
-    grid-column:5 / 6;
-}
-
-.group3 {
-    grid-column:6 / 7;
-}
-
-.group4 {
-    grid-column:7 / 8
-}
-
-
-body {
-    line-height:2;
-    background-color: var(--accent1_color);
+/* headings & paragraphs */
+h2 {
     color: var(--primary_color);
-}
-
-nav a {
-    color: var(--secondary_color);
-    margin: 0 15px;
-    font-size: 2rem;
-}
-
-
-/* hero section */
-.hero {
-    position:relative;
-}
-
-.hero img {
-    display:block;
-    width:100%;
-    height:auto;
-}
-
-.hero h1 {
-    position: absolute;
-    padding:20px;
-    left: 35%;
     text-align: center;
-    font-size: 3rem;
-    color: var(--accent2_color);  
+    font-size: 30px;
+    font-family: "shirkhand", sans-serif;
 }
 
-.hero article img {
-    float:right;
-    width: 250px;
-    height: auto;
-    margin-bottom: 15px;
-    padding:20px;
+/* hero positioning */
+.hero {
+    position: relative;
+    width: 95%;
 }
 
-.hero article {
-    text-align: left;
-    border: 1px solid var(--primary_color);
+#background-image {
+    width: 100%;
+    /* Make sure it covers the container */
+    height: 100%;
+    object-fit: cover;
+
+}
+
+h1 {
+    position: absolute;
+    top: 1em;
+    left: 7.5em;
+    justify-content: center;
+    color: var(--accent2_color);
+}
+
+.overlay {
+    position: absolute;
     background-color: var(--secondary_color);
-    max-width: 80%;
-    margin: 5rem 10rem;
-    padding:2rem;
+    top: 5em;
+    /* Position it at the top of the container */
+    left: 5em;
+    /* Position it at the left of the container */
+    width: 80%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    /* Centers the content horizontally */
+    align-items: center;
+    /* Centers the content vertically */
+    text-align: center;
+    /* Centers the text */
+    color: var(--primary_color);
+    border: .5em solid var(--primary_color);
 }
 
-.rafts img {
-    width: 15em; 
+.overlay p {
+    margin-right: 20px;
+    /* Adds space between text and image */
+    max-width: 70%;
+    /* Controls the width of the paragraph */
+    padding: 1em;
+}
+
+.overlay img {
+    position: absolute;
+    right: 0;
+    top: 3em;
+    max-width: 100px;
     height: auto;
+    border: .2em solid var(--primary_color)
 }
 
-.sociallinks a {
-    width: 5%; 
-    height: auto;
+
+/*history section*/
+section.history {
+    border: .5em solid var(--primary_color);
+    background-color: var(--secondary_color)
 }
 
-/* borders*/
-header{
-    border: 1px solid var(--primary_color);
-}
-div {
-    border: 1px solid var(--primary_color);
+#rafting-history {
+    color: var(--primary_color);
+    text-align: center;
+    padding: 30px;
+
 }
 
-section {
-    border: 1px solid var(--primary_color);
+/* adventure awaits section*/
+section.adventure {
+    border: .5em solid var(--primary_color);
+    background-color: var(--secondary_color);
 }
 
-section {
-    border: 1px solid var(--primary_color);
+div.rafts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: .5em;
 }
 
+figure {
+    color: var(--primary_color);
+    font-family: "albert+sans", sans-serif;
+    font-size: .8rem;
+    text-align: center;
+}
+
+/* footer section */
 footer {
-    border: 1px solid var(--primary_color);
-    background-color: var(--accent1_color);
-}
-
-nav.sociallinks {
+    border: .5em solid var(--primary_color);
+    background-color: var(--secondary_color);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
     text-decoration: none;
+    font-family: "albert+sans", sans-serif;
 }

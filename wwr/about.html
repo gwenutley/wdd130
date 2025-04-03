@@ -8,7 +8,12 @@
     <meta name="author" content="Gwen Utley" />
     <meta name="description"
         content="First page of rafting website, This page provides contact information, history, and other promotions for the company." />
-    <link rel="stylesheet" href="styles/rafting2.css" />
+    <link rel="stylesheet" href="styles/rafting.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Shrikhand&family=Truculenta:opsz,wght@12..72,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -27,20 +32,22 @@
         <div class="hero">
             <img id="background_img" src="images/hero.jpg" alt="river rafting" width="100%">
             <h1>Whitewater Rafting</h1>
-            <article class="hero">
-                <img class="rafting" src="images/client.jpg" alt="happy client" width="100em">
-                <p class="rafting">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque et quos facere.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque et quos facere.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque et quos facere.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque et quos facere.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque et quos facere.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque et quos facere.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque et quos facere.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque et quos facere.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque et quos facere.
-                </p>
-            </article>
+            <div class="overlay">
+                <article class="hero">
+                    <img class="rafting" src="images/client.jpg" alt="happy client" width="100em">
+                    <p class="rafting">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque et quos facere.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque et quos facere.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque et quos facere.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque et quos facere.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque et quos facere.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque et quos facere.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque et quos facere.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque et quos facere.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque et quos facere.
+                    </p>
+                </article>
+            </div>
         </div>
         <section class="history">
             <h2>History</h2>
@@ -58,11 +65,26 @@
         <section class="adventure">
             <h2>Adventure Awaits You!</h2>
             <div class="rafts">
-                <img src="images/raft1.jpg" alt="rafting1">
-                <img src="images/raft2.jpg" alt="rafting2">
-                <img src="images/raft3.jpg" alt="rafting3">
-                <img src="images/raft4.jpg" alt="rafting4">
-                <img src="images/raft5.jpg" alt="rafting5">
+                <figure>
+                    <img src="images/raft1.jpg" alt="rafting1">
+                    <figcaption>Whitewater</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/raft2.jpg" alt="rafting2">
+                    <figcaption>Canyon</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/raft3.jpg" alt="rafting3">
+                    <figcaption>group photos</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/raft4.jpg" alt="rafting4">
+                    <figcaption>paddling</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/raft5.jpg" alt="rafting5">
+                    <figcaption>rappids</figcaption>
+                </figure>
             </div>
         </section>
     </main>
