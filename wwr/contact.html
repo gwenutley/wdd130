@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>White Water Rafting</title>
+    <meta name="author" content="Gwen Utley" />
+    <meta name="description"
+        content="Contact page of rafting website, This page provides contact information for the company." />
+    <link rel="stylesheet" href="styles/rafting.css" />
+</head>
+<body>
+    <header>
+        <img src="images/logo.jpg" alt="logo" wmax-idth="300em">
+        <nav id="page-header">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <section id="client-images">
+            <img src="images/client1.jpg" alt="happy clients"/>
+            <img src="images/client2.jpg" alt="enjoying riverrafting"/>
+            <img src="images/client3.jpg" alt="fun in the water"/>
+        </section>
+        <section id="contact_info">
+            <h2>Contact Information</h2>
+            <h3>Phone</h3>
+            <p>+1(801)555-5555</p>
+            <h3>Email</h3>
+            <p>whitewaterrafting@rafting.com</p>
+            <h3>Address</h3>
+            <p>455 e. Raft Street, Boise, ID 84000</p>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d18310.42468264481!2d-116.10118263549724!3d44.74252394456389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smx!4v1744207134120!5m2!1sen!2smx" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+        <form>
+            <h2>Contact US</h1>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <!--form elements will go here -->
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname">
+                <br>
+                <label for="useremail">Email:</label>
+                <input type="text" id="useremail" name="useremail">
+            </fieldset>
+            <h2>Send us a Message</h1>
+            <fieldset>
+                <legend>Messages</legend>
+                <label for="inquery">General Inquery:</label>
+                <input type="radio" id="inquery" name="message_type" value="inquery">
+                <br>
+                <label for="question">Reservation Questions:</label>
+                <input type="radio" id="question" name="message_type" value="question">
+                <br>
+                <label for="suggestion">Website Suggestions:</label>
+                <input type="radio" id="suggestion" name="message_type" value="suggestion">
+                <br>
+                <textarea id="feedback" name="message" rows="10"
+                    placeholder="Type message here"></textarea>
+            </fieldset>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <p>
+            ©️ 2025 | WhiteWater Rafting | Gwen Utley
+        </p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/facebook.png" alt="facebook" width="75em">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.png" alt="twitter" width="75em">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.png" alt="instagram" width="75em">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>
