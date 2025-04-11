@@ -9,7 +9,7 @@
 :root {
     --primary_color: #14384D;
     --secondary_color: #c0d3ee;
-    --accent1_color: #987e7d;
+    --accent1_color: #e8c3c1;
     --accent2_color: white;
 
 
@@ -248,8 +248,10 @@ form fieldset textarea {
 #client-images {
     display: flex;
     margin-left: 10%;
+    margin-right: 10%;
     gap: 0;
     justify-items: center;
+    border-bottom: 1em solid var(--primary_color);
 }
 
 #client-images img {
@@ -262,4 +264,249 @@ form fieldset textarea {
 #client-images figcaption {
     font-family: WorkSansReg;
     text-align: center;
+}
+
+
+/* trips page additions */
+
+.trip1 div {
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr;
+    grid-column-gap: 1em;
+    height: 25em;
+    border: 4px solid var(--primary_color);
+
+    position: relative;
+    background-color: var(--secondary_color);
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.trip1 img {
+    position: absolute;
+    top: -1em;
+    left: 1em;
+    height: 25em;
+    
+    grid-column-start:1;
+    grid-column-end:2;
+    grid-row-start:1;
+    grid-row-end:3;
+}
+
+.trip1 h2 {
+    color: var(--primary_color);
+    text-align: center;
+    padding-top: 2em;
+    font-family: AlkatraReg;
+    font-size: 30px;
+
+    grid-column-start:2;
+    grid-column-end:3;
+    grid-row-start:1;
+    grid-row-end:2;
+}
+
+.trip1 p {
+    color: var(--primary_color);
+    text-align: center;
+    padding-bottom: 2em;
+    font-family: WorkSansReg;
+    font-size: 22px;
+    grid-column-start:2;
+    grid-column-end:3;
+    grid-row-start:2;
+    grid-row-end:3;
+}
+
+
+
+
+
+/*trip 2 additions*/
+.trip2 div {
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-column-gap: 1em;
+    height: 25em;
+    border: 4px solid var(--primary_color);
+
+    position: relative;
+    background-color: var(--secondary_color);
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.trip2 img {
+    position: absolute;
+    top: -1em;
+    right: 1em;
+    height: 25em;
+    
+    grid-column-start:2;
+    grid-column-end:3;
+    grid-row-start:1;
+    grid-row-end:3;
+}
+
+.trip2 h2 {
+    color: var(--primary_color);
+    text-align: center;
+    padding-top: 2em;
+    font-family: AlkatraReg;
+    font-size: 30px;
+    grid-column-start:1;
+    grid-column-end:2;
+    grid-row-start:1;
+    grid-row-end:2;
+}
+
+.trip2 p {
+    color: var(--primary_color);
+    text-align: center;
+    padding-bottom: 2em;
+    font-family: WorkSansReg;
+    font-size: 22px;
+    grid-column-start:1;
+    grid-column-end:2;
+    grid-row-start:2;
+    grid-row-end:3;
+}
+
+.calltoaction {
+    background-color: var(--accent1_color)
+}
+.calltoaction h3 {
+    color: var(--primary_color);
+    text-align: center;
+    padding-top: 2em;
+    font-family: AlkatraReg;
+    font-size: 30px;
+}
+
+.calltoaction nav {
+    text-align:center;
+    font-family:WorkSansReg;
+    font-size: 20px;
+    text-decoration: none;
+    padding-bottom:2em;
+}
+
+.calltoaction nav a {
+    text-decoration: none;
+}
+
+.calltoaction a:link {
+    color: rgb(8, 15, 39);
+}
+
+.calltoaction a:visited {
+    color: var(--primary_color);
+}
+
+.calltoaction a:hover {
+    color: black;
+}
+
+.calltoaction a:active {
+    color: rgb(8, 15, 39);
+}
+
+
+/* trip 3 additions*/
+.trip3 div {
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr;
+    grid-column-gap: 1em;
+    height: 25em;
+    border: 4px solid var(--primary_color);
+
+    position: relative;
+    background-color: var(--secondary_color);
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.trip3 img {
+    position: absolute;
+    top: -1em;
+    left: 1em;
+    height: 25em;
+    
+    grid-column-start:1;
+    grid-column-end:2;
+    grid-row-start:1;
+    grid-row-end:3;
+}
+
+.trip3 h2 {
+    color: var(--primary_color);
+    text-align: center;
+    padding-top: 2em;
+    font-family: AlkatraReg;
+    font-size: 30px;
+    grid-column-start:2;
+    grid-column-end:3;
+    grid-row-start:1;
+    grid-row-end:2;
+}
+
+.trip3 p {
+    color: var(--primary_color);
+    text-align: center;
+    padding-bottom: 2em;
+    font-family: WorkSansReg;
+    font-size: 22px;
+
+    grid-column-start:2;
+    grid-column-end:3;
+    grid-row-start:2;
+    grid-row-end:3;
+}
+
+
+/* trip page table */
+
+table {
+    color: var(--primary_color);
+    float: left;
+    width:70%;
+
+}
+
+table tr td {
+    border: 2px solid var(--primary_color);
+    font-family: WorkSansReg;
+}
+
+table tr td img{
+    width: 250px;
+    object-fit: contain;
+}
+
+table .images {
+    width: 30%
+}
+
+table .trip-title {
+    width:15%;
+    font-size: 25px;
+    text-align:center;
+}
+
+table .description {
+    font-size: 17px;
+    text-align: center;
+}
+
+.table-and-image {
+    display:flex
+}
+
+.table-and-image #tall {
+   width: 350px;
+   border: 3px solid var(--primary_color);
 }
