@@ -267,7 +267,10 @@ form fieldset textarea {
 }
 
 
-/* trips page additions */
+
+
+
+/* TRIPS PAGE ADDITIONS */
 
 .trip1 div {
     display:grid;
@@ -510,3 +513,117 @@ table .description {
    width: 350px;
    border: 3px solid var(--primary_color);
 }
+
+
+
+/* INDEX OR HOME PAGE ADDITIONS */
+.rafting-banner {
+    position: relative;
+    width: 95%;
+    height: auto;
+}
+
+.rafting-banner h1 {
+    position: absolute;
+    font-family: AlkatraReg;
+    color: var(--primary_color);
+    background-color: rgba(185, 207, 250, 0.95);
+    font-size: 50px;
+    top: 8em;
+    left: 13em;
+    padding: .2em;
+}
+
+.right img{
+    float:right;
+    width:35%;
+    margin-right:10%;
+    border: 3px solid var(--primary_color);
+}
+
+.company-info {
+    text-align:center;
+    font-family:WorkSansReg;
+    font-size: 20px;
+    float: right;
+    width: 40%;
+    margin-right: 5%;
+}
+
+.company-info img {
+    border:3px solid var(--primary_color);
+    width: 800px;
+    margin:1em;
+}
+
+#homeimg {
+    float: left;
+    margin-left:5%;
+}
+
+.home2 {
+    clear:both;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-bottom: 3px solid var(--primary_color);
+    border-top: 3px solid var(--primary_color);
+}
+
+.home2 img {
+    width:30%;
+    border: 3px solid var(--primary_color);
+}
+
+.home2 h2 {
+    grid-column-start:1;
+    grid-column-end:4;
+    font-family: AlkatraReg;
+    font-size:30px;
+    text-align: center;
+    background-color: var(--accent1_color)
+    
+}
+
+#trip1 {
+    grid-column-start:1;
+    grid-column-end:2;
+}
+
+#trip1 img{
+    width:350px;
+}
+
+#trip2 {
+    grid-column-start:2;
+    grid-column-end:3;
+}
+
+#trip2 img{
+    width:350px;
+}
+
+#trip3 {
+    grid-column-start:3;
+    grid-column-end:4;
+    justify-content: center;
+}
+
+#trip3 img{
+    width:350px;
+}
+
+.home2 figcaption {
+    text-align:center;
+    font-family: WorkSansReg;
+    font-size: 17px;
+}
+
+#triplink {
+    grid-column-start:1;
+    grid-column-end:4;
+    font-family: WorkSansReg;
+    font-size:20px;
+    text-align: center;
+    
+}
+
