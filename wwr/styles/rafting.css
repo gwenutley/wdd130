@@ -41,6 +41,10 @@ header {
     border: .5em solid var(--primary_color)
 }
 
+header img {
+    width:"200em";
+    border: var(--primary_color);
+}
 
 header nav a {
     float: right;
@@ -78,7 +82,8 @@ header a:active {
 }
 
 #background_img {
-    border: .5em solid var(--primary_color)
+    border: .5em solid var(--primary_color);
+    width:100%;
 }
 
 h1 {
@@ -201,6 +206,7 @@ footer nav a {
     top: 2em;
     right: 2em;
     text-decoration: none;
+    width:4em;
 }
 
 
