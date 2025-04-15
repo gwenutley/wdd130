@@ -42,7 +42,7 @@ header {
 }
 
 header img {
-    width:"200em";
+    width: 10em;
     border: var(--primary_color);
 }
 
